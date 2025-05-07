@@ -1,0 +1,15 @@
+C:\Users\aleks\source\repos\Laba8OOP\bin\Debug\net8.0\Laba8OOP.exe
+C:\Users\aleks\source\repos\Laba8OOP\bin\Debug\net8.0\Laba8OOP.deps.json
+C:\Users\aleks\source\repos\Laba8OOP\bin\Debug\net8.0\Laba8OOP.runtimeconfig.json
+C:\Users\aleks\source\repos\Laba8OOP\bin\Debug\net8.0\Laba8OOP.dll
+C:\Users\aleks\source\repos\Laba8OOP\bin\Debug\net8.0\Laba8OOP.pdb
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.AssemblyInfoInputs.cache
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.AssemblyInfo.cs
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.csproj.CoreCompileInputs.cache
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.sourcelink.json
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.dll
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\refint\Laba8OOP.dll
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.pdb
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\Laba8OOP.genruntimeconfig.cache
+C:\Users\aleks\source\repos\Laba8OOP\obj\Debug\net8.0\ref\Laba8OOP.dll
