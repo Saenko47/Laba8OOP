@@ -8,7 +8,8 @@ namespace Laba8OOP
 {
     internal class Item
     {
-       public string[] randomItemNames = new string[]
+        Random random = new Random();
+        public string[] randomItemNames = new string[]
 {
     "Toothbrush",
     "Shirt",
@@ -21,20 +22,30 @@ namespace Laba8OOP
     "Book",
     "Sunglasses"
 };
+        public double Length;
+        public double Width;
+        public double Height;
         public string name;
         public double weight;
         public double space;
-        public Item(double weight, double space)
+        public Item(double weight, double space, double Length, double Width, double Height)
         {
-           this.name = randomItemNames[new Random().Next(0, randomItemNames.Length)];
+           this.name = randomItemNames[random.Next(0, randomItemNames.Length)];
             this.weight = weight;
-            this.space = space;
+            this.space = GetSpace();
         }
         public Item()
         {
             this.name = randomItemNames[new Random().Next(0, randomItemNames.Length)];
-            this.weight = new Random().Next(1,11);
-            this.space = new Random().Next(50,751);
+            this.weight = random.Next(1, 11); 
+            this.Length = random.Next(1, 21); 
+            this.Width = random.Next(1, 21);
+            this.Height = random.Next(1, 21);
+            this.space = GetSpace();
+        }
+        public double GetSpace()
+        {
+            return Length * Width * Height;
         }
     }
 }
