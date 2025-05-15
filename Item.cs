@@ -6,46 +6,68 @@ using System.Threading.Tasks;
 
 namespace Laba8OOP
 {
+    public enum ShapeType { Rectangle, Sphere, Cylinder, Cube }
     internal class Item
     {
         Random random = new Random();
         public string[] randomItemNames = new string[]
 {
-    "Toothbrush",
-    "Shirt",
-    "Laptop",
-    "Passport",
-    "Shoes",
-    "Charger",
-    "Towel",
-    "Headphones",
-    "Book",
-    "Sunglasses"
+  
+   
 };
+        public ShapeType  shape;
         public double Length;
         public double Width;
         public double Height;
         public string name;
         public double weight;
         public double space;
-        public Item(double weight, double space, double Length, double Width, double Height)
+        public Item(string name, ShapeType shape, double weight, double Length, double Width, double Height)
         {
-           this.name = randomItemNames[random.Next(0, randomItemNames.Length)];
+            
+            this.Length = Length;
+            this.Width = Width;
+            this.Height = Height;
+
+            this.name = name;
+            this.shape = shape; 
             this.weight = weight;
             this.space = GetSpace();
         }
         public Item()
         {
-            this.name = randomItemNames[new Random().Next(0, randomItemNames.Length)];
-            this.weight = random.Next(1, 11); 
-            this.Length = random.Next(1, 21); 
+            this.name = "No name";
+            this.weight = random.Next(1, 11);
+            this.Length = random.Next(1, 21);
             this.Width = random.Next(1, 21);
             this.Height = random.Next(1, 21);
-            this.space = GetSpace();
+            this.shape = (ShapeType)random.Next(Enum.GetValues(typeof(ShapeType)).Length);
         }
         public double GetSpace()
         {
-            return Length * Width * Height;
+            switch (shape)
+            {
+                case ShapeType.Rectangle:
+                    return Length * Width * Height;
+
+
+                case ShapeType.Sphere:
+                    double radiusSphere = Length / 2;
+                    return (4.0 / 3.0) * Math.PI * Math.Pow(radiusSphere, 3);
+                   
+
+                case ShapeType.Cylinder:
+                    double radiusCylinder = Length / 2;
+                    return Math.PI * Math.Pow(radiusCylinder, 2) * Height;
+                    
+
+                case ShapeType.Cube:
+                    return Math.Pow(Length, 3);
+                   
+
+                default:
+                    return 0;
+                               }
         }
     }
 }

@@ -49,7 +49,7 @@ namespace Laba8OOP
         {
             this.bagBrand = suitcaseBrands[random.Next(0, suitcaseBrands.Length)];
             this.bagColor = suitcaseColors[random.Next(0, suitcaseColors.Length)];
-            weight = 0;
+            this.weight = 0;
             this.Length = 0;
             this.Width = 0;
             this.Height = 0;
@@ -62,7 +62,7 @@ namespace Laba8OOP
         {
             this.bagBrand = suitcaseBrands[random.Next(0, suitcaseBrands.Length)];
             this.bagColor = suitcaseColors[random.Next(0, suitcaseColors.Length)];
-            weight = 0;
+            this.weight = 0;
             this.Length = Length;
             this.Width = Width;
             this.Height = Height;
@@ -85,8 +85,9 @@ namespace Laba8OOP
         }
         public void IsBagFull()
         {
-
+            ShowAllItems();
             throw new InvalidOperationException("Cannot add item: bag is full.");
+
 
 
         }
@@ -95,10 +96,10 @@ namespace Laba8OOP
             Console.WriteLine("All items in bag:");
             for (int i = 0; i < items.Length; i++)
             {
-                Console.WriteLine($"Item {i + 1}: {items[i].name}, weight: {items[i].weight}, space: {items[i].space}");
+                Console.WriteLine($"Item {i + 1}: {items[i].name}, weight: {items[i].weight}, space: {items[i].space:F2}");
             }
             Console.WriteLine($"Total weight: {weight}");
-            Console.WriteLine($"{space - usedSpace} - space left");
+            Console.WriteLine($"{space - usedSpace:F2} - space left");
         }
         public void PutSomethingIn(params Item[] item)
         {

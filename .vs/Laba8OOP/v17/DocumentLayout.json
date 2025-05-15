@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\bag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:bag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\task3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:task3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\bag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:bag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\genitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:genitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\task1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:task1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|c:\\users\\aleks\\source\\repos\\laba8oop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77598B39-A734-4E86-921C-C77D1B582C83}|Laba8OOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "GenItem.cs",
+              "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\GenItem.cs",
+              "RelativeDocumentMoniker": "GenItem.cs",
+              "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\GenItem.cs",
+              "RelativeToolTip": "GenItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T16:54:47.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Task3.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Task3.cs",
               "RelativeDocumentMoniker": "Task3.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Task3.cs",
               "RelativeToolTip": "Task3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T20:10:58.319Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Item.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Item.cs",
               "RelativeDocumentMoniker": "Item.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Item.cs",
               "RelativeToolTip": "Item.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAwC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T11:51:31.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Bag.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Bag.cs",
               "RelativeDocumentMoniker": "Bag.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Bag.cs",
               "RelativeToolTip": "Bag.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAwwG4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-07T11:30:42.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Task1.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Task1.cs",
               "RelativeDocumentMoniker": "Task1.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Task1.cs",
               "RelativeToolTip": "Task1.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAmwFEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T13:27:18.773Z"
+              "WhenOpened": "2025-05-06T13:27:18.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\aleks\\source\\repos\\Laba8OOP\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwEAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:19:27.705Z"
+              "WhenOpened": "2025-05-06T09:19:27.705Z",
+              "EditorCaption": ""
             }
           ]
         }

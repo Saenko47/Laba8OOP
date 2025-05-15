@@ -31,7 +31,7 @@ namespace Laba8OOP
         public static void Task3Method2()
         {
             Func<bool> func = () => { bool Is; if (DateTime.Now.DayOfYear == 256) { Is = true; } else { Is = false; } return Is; };
-            if (func()) { Console.WriteLine("Today day of coder? yappy"); }
+            if (func()) { Console.WriteLine("Today day of coder, yappy"); }
             else { Console.WriteLine("Not today, i guess(((((("); }
         }
         public static void Task3Method3(string text,string word) 
