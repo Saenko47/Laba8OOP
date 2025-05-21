@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+       
         static void Main(string[] args)
         {
             try
@@ -12,12 +13,18 @@
                 Bag bag = new Bag(70.0, 40.0, 30.0);
                 GenItem genItem = new GenItem();
                 Item[] items = genItem.GenerateItem(60);
+
+
+
+
+
                 bag.BagFull += bag.IsBagFull;
-                Console.WriteLine("Bag space: " + bag.GetSpace());
+
                 bag.PutSomethingIn(items);
                 bag.ShowAllItems();
                 while (true)
                 {
+                   
                     Console.WriteLine("Enter name of item,q - to exit");
                     name = Console.ReadLine();
                     if (name == "q") break;
@@ -58,20 +65,16 @@
                     Item item = new Item(name, shapeType, weight, length, width, height);
                     bag.PutSomethingIn(item);
                     bag.ShowAllItems();
+                    Console.ReadLine();
+                    Console.Clear();
                 }
             }
             catch (InvalidOperationException ex)
             {
+              
                 Console.WriteLine(ex.Message);
             }
-            catch (IndexOutOfRangeException ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("An error occurred: " + ex.Message);
-            }
+            
         }
         
     }

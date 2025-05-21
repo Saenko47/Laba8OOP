@@ -85,40 +85,71 @@ namespace Laba8OOP
         }
         public void IsBagFull()
         {
-            ShowAllItems();
+
             throw new InvalidOperationException("Cannot add item: bag is full.");
-
-
 
         }
         public void ShowAllItems()
         {
             Console.WriteLine("All items in bag:");
-            for (int i = 0; i < items.Length; i++)
+           foreach(Item tem in items)
             {
-                Console.WriteLine($"Item {i + 1}: {items[i].name}, weight: {items[i].weight}, space: {items[i].space:F2}");
+                Console.WriteLine(tem.ToString());
             }
             Console.WriteLine($"Total weight: {weight}");
             Console.WriteLine($"{space - usedSpace:F2} - space left");
         }
         public void PutSomethingIn(params Item[] item)
-        {
-            
+        { 
+            bool weCantPutAll = false;
+            Item cantPuThisItem = new Item();
             int oldItemLen = items.Length;
-            Item[] temp = new Item[oldItemLen + item.Length];
-            Array.Copy(items, temp, oldItemLen);
-            for (int i = 0; i < item.Length; i++)
+            int newItemLen = item.Length;
+            double fit =0 ;
+            int canFit = 0;
+            for (int k = 0; k < item.Length; ++k)
             {
-                if (item[i].space + usedSpace > space) { BagFull?.Invoke(); return; }
+                if (!weCantPutAll)
+                {
+                    fit += item[k].space;
+                    if (fit + usedSpace <= space)
+                    {
+                        canFit++;
+                    }
+                    else
+                    {
+                        weCantPutAll = true;
+                        cantPuThisItem = item[k];
+                    }
+                }
+            }
+            if (fit + usedSpace >= space)
+            {
+                newItemLen = canFit;
+            }
+            Item[] temp = new Item[newItemLen+oldItemLen];
+            Array.Copy(items, temp, oldItemLen);
+            for (int i = 0; i < newItemLen; i++)
+            {
+               
                 temp[oldItemLen + i] = item[i];
                 weight += item[i].weight;
                 usedSpace += item[i].space;
             }
+          
             items = temp;
+            if (weCantPutAll)
+            {
+                Console.Clear();
+                ShowAllItems();
+                Console.WriteLine($"Item that we cant put: \n Name:{cantPuThisItem.name}\n Space: {cantPuThisItem.space:F2}");
+                BagFull?.Invoke();
 
+            }
 
         }
 
-        
+
+
     }
 }

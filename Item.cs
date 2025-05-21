@@ -10,11 +10,7 @@ namespace Laba8OOP
     internal class Item
     {
         Random random = new Random();
-        public string[] randomItemNames = new string[]
-{
-  
-   
-};
+       
         public ShapeType  shape;
         public double Length;
         public double Width;
@@ -42,6 +38,7 @@ namespace Laba8OOP
             this.Width = random.Next(1, 21);
             this.Height = random.Next(1, 21);
             this.shape = (ShapeType)random.Next(Enum.GetValues(typeof(ShapeType)).Length);
+            this.space = GetSpace();
         }
         public double GetSpace()
         {
@@ -68,6 +65,11 @@ namespace Laba8OOP
                 default:
                     return 0;
                                }
+        }
+        public override string ToString()
+        {
+
+            return $"item name:{name}, space {space:F2}, width:{Width}, Shape: {shape}";
         }
     }
 }
