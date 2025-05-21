@@ -13,13 +13,7 @@
                 Bag bag = new Bag(70.0, 40.0, 30.0);
                 GenItem genItem = new GenItem();
                 Item[] items = genItem.GenerateItem(60);
-
-
-
-
-
-                bag.BagFull += bag.IsBagFull;
-
+                bag.BagFull += bag.IsBagFull;                  
                 bag.PutSomethingIn(items);
                 bag.ShowAllItems();
                 while (true)

@@ -100,17 +100,16 @@ namespace Laba8OOP
             Console.WriteLine($"{space - usedSpace:F2} - space left");
         }
         public void PutSomethingIn(params Item[] item)
-        { 
-            bool weCantPutAll = false;
+        {
             Item cantPuThisItem = new Item();
+            bool weCantPutAll = false;
             int oldItemLen = items.Length;
             int newItemLen = item.Length;
-            double fit =0 ;
+            double fit = 0 ;
             int canFit = 0;
             for (int k = 0; k < item.Length; ++k)
             {
-                if (!weCantPutAll)
-                {
+             
                     fit += item[k].space;
                     if (fit + usedSpace <= space)
                     {
@@ -120,8 +119,9 @@ namespace Laba8OOP
                     {
                         weCantPutAll = true;
                         cantPuThisItem = item[k];
+                    break;
                     }
-                }
+                
             }
             if (fit + usedSpace >= space)
             {
